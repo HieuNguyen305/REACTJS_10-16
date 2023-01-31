@@ -1,0 +1,5 @@
+===== BUỔI 10 =====
+    - ROUTING
+    - CALL API
+    - DYNAMIC ???
+    - LAZY LOAD
