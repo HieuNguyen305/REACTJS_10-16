@@ -1,5 +1,5 @@
 import { combineReducers } from "redux"
-
-const rootReducer = combineReducers({});
+import listMovieReducer from "../pages/HomeTemPlate/ListMoviePages/duck/reducer";
+const rootReducer = combineReducers({ listMovieReducer });
 
 export default rootReducer;

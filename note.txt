@@ -3,3 +3,19 @@
     - CALL API
     - DYNAMIC ???
     - LAZY LOAD
+
+===== BUỔI 11 =====
+    - HOOKS
+    - UseEffect đại diện cho 3 lifecycle bên class : componentDidMount, DidUpdate, WillUnMount
+    - TIP PV : Giữa class vs func or lifecycle vs hooks thì cái nào nhanh hơn.
+    - Thì không có cái nào nhanh hơn, tùy theo cách mình thiết kế
+
+===== BUỔI 12 =====
+    - Call API ListMovie 
+    - Middleware Async Action : redux thunk
+    - Read redux saga, same like redux thunk but use for big project
+    - Detail movie
+    - Refactor Api util
+
+===== BUỔI 13 =====
+    - Get Params From URL   

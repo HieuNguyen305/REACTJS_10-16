@@ -18,6 +18,10 @@ const routes = [
                 path: "list-movie",
                 element: lazy(() => import("./../pages/HomeTemPlate/ListMoviePages"))
             },
+            {
+                path: "detail/:id",
+                element: lazy(() => import("./../pages/HomeTemPlate/DetailMoviePage/DetailMoviePage"))
+            },
         ]
     },
     {
@@ -37,7 +41,15 @@ const routes = [
                 element: lazy(() => import("./../pages/AdminTemPlate/DashBoardPage"))
             },
         ]
-    }
+    },
+    {
+        path: "/hooks-state",
+        element: lazy(() => import("../pages/Hooks/State")),
+    },
+    {
+        path: "/hooks-effect",
+        element: lazy(() => import("../pages/Hooks/Effect")),
+    },
 ];
 
 const renderRoutes = () => {
