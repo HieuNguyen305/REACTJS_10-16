@@ -43,6 +43,10 @@ const routes = [
         ]
     },
     {
+        path: "auth",
+        element: lazy(() => import("./../pages/AdminTemPlate/AuthPage")),
+    },
+    {
         path: "/hooks-state",
         element: lazy(() => import("../pages/Hooks/State")),
     },

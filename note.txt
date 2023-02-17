@@ -19,3 +19,5 @@
 
 ===== BUỔI 13 =====
     - Get Params From URL   
+    - DETAIL MOVIE
+    - Authorize
