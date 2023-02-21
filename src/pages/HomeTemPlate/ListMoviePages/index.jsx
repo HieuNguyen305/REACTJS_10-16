@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Movie from './Movie/Movie';
-import Loader from '../../../components/Loader/Loader';
+import Loader from 'components/Loader/Loader';
 import { actFetchData } from "./duck/action"
 import { connect } from 'react-redux';
 class ListMoviePages extends Component {

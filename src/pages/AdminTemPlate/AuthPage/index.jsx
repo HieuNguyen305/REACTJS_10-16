@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { actAuthLogin } from './duck/actions';
 import { useSelector, useDispatch } from 'react-redux';
 import Loader from "./../../../components/Loader/Loader";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 
 function AuthPage() {
     const dispatch = useDispatch();
@@ -35,6 +35,7 @@ function AuthPage() {
         );
     };
 
+    if (localStorage.getItem("UserAdmin")) return <Navigate replace to="/admin/dashboard" />;
     if (props.loading) return <Loader />;
 
     return (

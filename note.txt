@@ -21,3 +21,22 @@
     - Get Params From URL   
     - DETAIL MOVIE
     - Authorize
+
+===== BUỔI 14 =====
+    - Guard Routing Admin
+    - Add User
+    - Alias
+    - Styled Component (JSS)
+    - Scss
+    - Deploy
+    - Deploy tay 
+        + Hosting
+    - Deploy vercel
+
+===== BUỔI 15 =====
+    -        
+
+
+===== BUỔI 16 =====
+    - Closure
+    - HOC (Higher-Order Components)
