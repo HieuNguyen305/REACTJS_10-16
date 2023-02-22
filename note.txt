@@ -26,15 +26,17 @@
     - Guard Routing Admin
     - Add User
     - Alias
-    - Styled Component (JSS)
-    - Scss
-    - Deploy
-    - Deploy tay 
-        + Hosting
-    - Deploy vercel
+    
 
 ===== BUỔI 15 =====
-    -        
+    - scss
+    - Styled Component (JSS)
+    - antd
+    - hooks
+    - Deploy
+        + Deploy tay
+            + Hosting
+        + Deploy vercel     
 
 
 ===== BUỔI 16 =====
