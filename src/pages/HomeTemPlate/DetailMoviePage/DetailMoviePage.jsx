@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from "react-router-dom"
 import { fetchDetailMovie } from './duck/actions';
 import { useSelector, useDispatch } from "react-redux";
+// useSelector vs useDispatch : sử dụng thay cho 2 hàm mapStateToProps + mapDispatchToProps sử dụng được trong hook functions
 import Loader from "./../../../components/Loader/Loader"
 export default function DetailMoviePage() {
     const loading = useSelector((state) => state.detailMovieReducer.loading);
