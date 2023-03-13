@@ -10,6 +10,7 @@ export default class HomePages extends Component {
         return (
             <div>
                 <button className='btn btn-primary'>Test</button>
+                <button className="btn-bg-red">Test</button>
                 <WrapperCard />
                 {/* <NhanVien /> */}
             </div>

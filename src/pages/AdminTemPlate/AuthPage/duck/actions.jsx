@@ -16,6 +16,7 @@ export const actAuthLogin = (user, navigate) => {
                     })
                 }
                 dispatch(actAuthLoginSuccess(result.data.content));
+                
                 // Lưu trạng thái login
                 localStorage.setItem("UserAdmin", JSON.stringify(result.data.content));
 

@@ -7,7 +7,7 @@ HIẾU
     - LAZY LOAD
 
 ===== BUỔI 11 =====
-    - HOOKS
+    - HOOKS trong function state thay đổi tất cả đều chạy lại, còn trong class state thay đổi chỉ có mỗi render là chạy lại
     - UseEffect đại diện cho 3 lifecycle bên class : componentDidMount, DidUpdate, WillUnMount
     - TIP PV : Giữa class vs func or lifecycle vs hooks thì cái nào nhanh hơn.
     - Thì không có cái nào nhanh hơn, tùy theo cách mình thiết kế
@@ -28,15 +28,15 @@ HIẾU
     - Guard Routing Admin
     - Add User
     - Alias
-    
+
 
 ===== BUỔI 15 =====
     - scss
     - Styled Component (JSS)
-    - antd
+    - antd = ant design
     - hooks
     - Deploy
-        + Deploy tay
+        + Deploy tay : npm run build
             + Hosting
         + Deploy vercel     
 

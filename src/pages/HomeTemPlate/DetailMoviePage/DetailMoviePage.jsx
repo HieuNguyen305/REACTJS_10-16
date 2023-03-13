@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams } from "react-router-dom"
 import { fetchDetailMovie } from './duck/actions';
 import { useSelector, useDispatch } from "react-redux";
-// useSelector vs useDispatch : sử dụng thay cho 2 hàm mapStateToProps + mapDispatchToProps sử dụng được trong hook functions
+// useSelector vs useDispatch : sử dụng thay cho 2 hàm mapStateToProps vs mapDispatchToProps sử dụng được trong hook functions
 import Loader from "./../../../components/Loader/Loader"
 export default function DetailMoviePage() {
     const loading = useSelector((state) => state.detailMovieReducer.loading);
@@ -21,6 +21,7 @@ export default function DetailMoviePage() {
     return (
         <div>
             <h3>{data && data.tenPhim}</h3>
+            {/* lúc đầu data gán giá trị là null nên lỗi phải kiểm tra nếu data = true thì chấm tới thuộc tính cần show */}
         </div>
     )
 }
