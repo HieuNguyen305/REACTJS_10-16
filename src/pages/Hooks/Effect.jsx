@@ -20,39 +20,36 @@ import axios from 'axios'
 function Effect() {
     const [posts, setPosts] = useState([])
     const [userId, setUserId] = useState("");
-
-    const fetchData = () => {
-        axios
-            .get("https://jsonplaceholder.typicode.com/posts", {
-                params: {
-                    userId: userId || undefined,
-                },
-            })
-            .then((response) => {
-                // Gọi API thành công
-                setPosts(response.data);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    };
-
     //useEffect second param is array, chạy 1 lần duy nhất sau lần render đầu tiên (tương tự componentDidMount)
     // Nếu trong effect callback có return về 1 func, nó sẽ được chạy trước khi component bị hủy bỏ (tương tự componentWillUnmount)
     // Thường dùng để call API hoặc tương tác với DOM
     // useEffect(() => {
     //     console.log("Effect run");
     //     fetchData();
-
     //     return () => {
     //         //Dọn dẹp các tác vụ : removeEventListener, cleanTimeOut,...
     //         console.log("Cleanup effect run");
     //     }
     // }, [])
-
     // useEffect với tham số thứ 2 là 1 array có chứa giá trị sẽ chạy sau lần render đầu tiên và được chạy sau các lần render tiếp theo nếu các giá trị bên trong array bị thay đổi
     // Nếu trong effect callback có return về 1 func, được chạy trước khi component bị hủy bỏ và từ lần chạy thứ 2 trở đi nó sẽ được chạy trước effect callback
     useEffect(() => {
+        const fetchData = () => {
+            axios
+                .get("https://jsonplaceholder.typicode.com/posts", {
+                    params: {
+                        userId: userId || undefined,
+                    },
+                })
+                .then((response) => {
+                    // Gọi API thành công
+                    setPosts(response.data);
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        };
+
         console.log("Effect run");
         fetchData();
 
@@ -60,7 +57,7 @@ function Effect() {
             //Dọn dẹp các tác vụ : removeEventListener, cleanTimeOut,...
             console.log("Cleanup effect run");
         }
-    }, [userId])
+    }, [userId]);
 
     console.log("Render run");
 
